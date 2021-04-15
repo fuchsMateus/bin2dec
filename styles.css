@@ -1,0 +1,30 @@
+.box{
+   height: 60vh;
+   width: 75vw;
+   background-color: whitesmoke;
+   margin: auto;
+   margin-top: 5%;
+   border-radius: 60px;
+   border: 2px solid darkgray;
+   padding: 5vmax;
+   font-size: 5vw;
+   min-height: 300px;
+   min-width: 300px;
+   
+   
+}
+
+.grid-container{
+    
+}
+
+.texto1{
+    font-size: 5vw;
+}
+
+.input{
+
+}
+
+.botao-converter{
+}
