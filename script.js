@@ -38,6 +38,38 @@ function verificaCaracter(){
 }
 
 function converter(){
+    if(convertState == "bin2dec"){
+        let valorAConverter = input.value;
 
+        for (let i = 0; i < valorAConverter.length; i++) {    
+            if((valorAConverter.charAt(i) != '1' && valorAConverter.charAt(i) != '0') 
+                || valorAConverter == null){
+                alert("O valor a ser convertido possui caracteres inválidos");
+                return false;
+            }  
+        } 
+
+        if(valorAConverter.includes(".") || valorAConverter.includes(",")
+            ||  valorAConverter.includes("-") ||  valorAConverter.includes("+")
+            ||  valorAConverter.charAt(0) ==""){
+
+                alert("O valor a ser convertido possui caracteres inválidos");
+        }
+        else{
+            let result = 0;
+            for (let i = 0; i < valorAConverter.length; i++) {
+                tempRes = parseInt(valorAConverter.charAt(i));
+                tempRes = tempRes * Math.pow(2, valorAConverter.length -(i+1));
+                result+= tempRes;
+            }
+            
+            if(valorAConverter.length >= 32){
+                campoResultado.textContent = valorAConverter.slice(0, 29) + "... bin = " + result+ " dec";
+            }
+            else{
+                campoResultado.textContent = valorAConverter + " bin = " + result+ " dec";
+            }
+        }
+    }
 }
 
