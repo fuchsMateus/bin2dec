@@ -8,9 +8,7 @@
    padding: 5vmax;
    font-size: 5vw;
    min-height: 300px;
-   min-width: 300px;
-   
-   
+   min-width: 300px;   
 }
 
 #grid-container{
@@ -62,4 +60,8 @@
 
     grid-row-start:3;
     grid-row-end: 4;
+}
+
+#inputTemp{
+    font-size: 60%;
 }
