@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>CSS</title>
+    <title>bin2dec</title>
 </head>
 <body>
     <div id="box"> 
         <div id="grid-container">
             <div id="texto1">Valor Binário</div>    
-            <input type="number" id="input">
+            <input type="number" id="input" oninput="verificaCaracter()">
             <button id="botao-trocar" onclick="trocarConversao()">&#8644;</button>
-            <button id="botao-converter">Converter</button>
+            <button id="botao-converter" onclick="converter()">Converter</button>
         </div>
         <hr>
         <div id="campo-resultado">
