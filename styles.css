@@ -1,4 +1,4 @@
-.box{
+#box{
    height: 60vh;
    width: 75vw;
    background-color: whitesmoke;
@@ -13,7 +13,7 @@
    
 }
 
-.grid-container{
+#grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -21,7 +21,7 @@
     gap: 5%;
 }
 
-.texto1{
+#texto1{
     align-self: center;
     font-size: 70%;
     grid-column-start: 1;
@@ -31,7 +31,7 @@
     grid-row-end: 2;
 }
 
-.input{
+#input{
     align-self: center;
     font-size: 60%;
     grid-column-start: 2;
@@ -41,7 +41,7 @@
     grid-row-end: 2;
 }
 
-.botao-trocar{
+#botao-trocar{
     height: fit-content;
     width: fit-content;
     margin-left: 60%;
@@ -53,7 +53,7 @@
     grid-row-end: 3;
 }
 
-.botao-converter{
+#botao-converter{
     height: fit-content;
     font-size: 75%;
     height: 100%;
